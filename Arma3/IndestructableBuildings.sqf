@@ -1,5 +1,5 @@
 /* This example will make buildings/houses indestructable
- * Authot: Florian Kinder
+ * Author: Florian Kinder
  * License: this file can be used without the owners to inform
  */
 private ["_mapSize","_gridSize","_cursorX","_cursorY","_limit","_curX","_curY"];
