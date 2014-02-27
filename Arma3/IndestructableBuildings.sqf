@@ -2,7 +2,7 @@
  * Author: Florian Kinder
  * License: this file can be used without the owners to inform
  */
-private ["_mapSize","_gridSize","_cursorX","_cursorY","_limit","_curX","_curY"];
+private ["_mapSize","_gridSize","_gridRadius","_cursorX","_cursorY","_limit","_curX","_curY"];
 _mapSize = getnumber (configFile >> "CfgWorlds" >> (worldName) >> "mapSize");
 
 if (_mapSize == 0) then {
@@ -10,6 +10,7 @@ if (_mapSize == 0) then {
 }
 else {
 	_gridSize = 512;
+	_gridRadius = ceil(sqrt((_gridSize * _gridSize) + (_gridSize * _gridSize)) / 2);
 	_cursorX = 0;
 	_cursorY = 0;
 	_limit = _mapSize/_gridSize;
@@ -24,7 +25,7 @@ else {
 			_x removeAllEventHandlers "handleDamage";
 			_x addEventHandler ["handleDamage", {false}];
 			_x allowDamage false;
-		} forEach nearestObjects [[_curX,_curY,0], ["house"], _gridSize];
+		} forEach nearestObjects [[_curX,_curY,0], ["house"], _gridRadius];
 
 		// Iterate X cursor (rows)
 		_cursorX = _cursorX + 1;
@@ -35,7 +36,7 @@ else {
 			_cursorY = _cursorY + 1;
 		};
 		sleep 0.1;
-	}
+	};
 
 	diag_log "complete";
 };
