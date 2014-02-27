@@ -1,4 +1,4 @@
-/* This example will make buildings/houses indestructable
+/* This example will make houses/ruins indestructable
  * Author: Florian Kinder
  * License: this file can be used without the owners to inform
  */
@@ -25,7 +25,7 @@ else {
 			_x removeAllEventHandlers "handleDamage";
 			_x addEventHandler ["handleDamage", {false}];
 			_x allowDamage false;
-		} forEach nearestObjects [[_curX,_curY,0], ["house"], _gridRadius];
+		} forEach nearestObjects [[_curX,_curY,0], ["House","Ruins"], _gridRadius];
 
 		// Iterate X cursor (rows)
 		_cursorX = _cursorX + 1;
