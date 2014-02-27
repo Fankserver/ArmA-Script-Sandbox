@@ -15,6 +15,7 @@ else {
 	_limit = _mapSize/_gridSize;
 
 	while {_cursorY < _limit} do {
+		// Get new grid center position
 		_curX = (_cursorX * _gridSize) + (0.5 * _gridSize);
 		_curY = (_cursorY * _gridSize) + (0.5 * _gridSize);
 
@@ -36,5 +37,5 @@ else {
 		sleep 0.1;
 	}
 
-	diag_log "complete"
+	diag_log "complete";
 };
