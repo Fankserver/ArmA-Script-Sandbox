@@ -1,0 +1,8 @@
+author = "Fank";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 1;
+};
