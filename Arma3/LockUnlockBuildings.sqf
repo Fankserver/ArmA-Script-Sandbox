@@ -3,8 +3,9 @@
 // _this select 0		object pointer
 // _this select 1		lock state
 
-private["_building","_numberOfDoors"];
+private["_building","_return","_numberOfDoors"];
 _building = _this select 0;
+_return = false;
 
 if (isNumber (configFile >> "cfgVehicles" >> (typeOf _building) >> "numberOfDoors")) then {
 	_numberOfDoors = getNumber (configFile >> "cfgVehicles" >> (typeOf _building) >> "numberOfDoors");
@@ -16,26 +17,26 @@ if (isNumber (configFile >> "cfgVehicles" >> (typeOf _building) >> "numberOfDoor
 					_building setVariable [format ['bis_disabled_Door_%1', _x], 1, true];
 				};
 
-				hint format["%1 doors locked", _numberOfDoors];
+				_return = true;
 			};
 			case "unlock": {
 				for [{_x=1},{_x<=_numberOfDoors},{_x=_x+1}] do {
 					_building setVariable [format ['bis_disabled_Door_%1', _x], 0, true];
 				};
 
-				hint format["%1 doors unlocked", _numberOfDoors];
+				_return = true;
 			};
 			default: {
-				hint "lock state unkown";
+				diag_log (format ["LockUnlockBuildings: lock state unknown: %1", (_this select 1)]);
 			};
 		};
 	}
 	else {
 		// building has no doors
-		hint "building has no doors";
 	};
 }
 else {
 	// building has no doors
-	hint "building has no doors";
 };
+
+_return;
