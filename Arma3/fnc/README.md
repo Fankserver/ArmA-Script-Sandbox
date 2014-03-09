@@ -1,4 +1,4 @@
-ArmaScriptSandbox
+Arma3 functions
 =================
 
 ```sqf
