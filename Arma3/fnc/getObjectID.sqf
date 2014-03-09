@@ -10,14 +10,14 @@ _objectID = [];
 
 _characterArray = toArray (str _object);
 {
+	if (_x == 58) then {
+		_foundColon = true;
+	};
 	if (_foundHash && (_x != 32) && !_foundColon) then {
 		_objectID = _objectID + [_x];
 	};
-	if (_item == 35) then {
+	if (_x == 35) then {
 		_foundHash = true;
-	};
-	if (_item == 58) then {
-		_foundColon = true;
 	};
 } forEach _characterArray;
 
