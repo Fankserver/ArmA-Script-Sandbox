@@ -35,7 +35,6 @@ else {
 			_cursorX = 0;
 			_cursorY = _cursorY + 1;
 		};
-		sleep 0.1;
 	};
 
 	diag_log "complete";
