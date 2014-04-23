@@ -1,0 +1,118 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, FPS Manager">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-36.768673,533.704102,53.231323,583.704102,0.000000,"init"};
+item1[] = {"true",8,218,-37.364014,606.966980,52.635986,656.966980,0.000000,"true"};
+item2[] = {"Repeater",2,250,-37.366936,680.859558,52.633080,730.859558,0.000000,"Repeater"};
+item3[] = {"Time_Check_5sek",4,218,-36.925579,763.796814,53.074421,813.796814,0.000000,"Time Check" \n "5sek"};
+item4[] = {"Extension_call",2,4346,-37.303535,841.277954,52.696480,891.277954,0.000000,"Extension call"};
+item5[] = {"true",8,218,-37.688129,933.801575,52.311871,983.801575,0.000000,"true"};
+item6[] = {"",7,210,-300.321777,955.025696,-292.321747,963.025696,0.000000,""};
+item7[] = {"",7,210,-300.057068,701.597839,-292.057068,709.597839,0.000000,""};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,4};
+link4[] = {4,5};
+link5[] = {5,6};
+link6[] = {6,7};
+link7[] = {7,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,11,6316128,1,-417.548584,399.303040,1112.951538,473.334656,1417,935,1};
+window[] = {2,3840,0,-1,-1,867,4033,5676,107,3,1435};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "FPS Manager";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"private [""_manageCheck""];" \n
+       "_manageCheck = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Repeater";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Repeater">*/
+    class Repeater
+    {
+      name = "Repeater";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Time_Check_5sek">*/
+        class Time_Check_5sek
+        {
+          priority = 0.000000;
+          to="Extension_call";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((time - _manageCheck) >= 1)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Extension_call">*/
+    class Extension_call
+    {
+      name = "Extension_call";
+      init = /*%FSM<STATEINIT""">*/"{" \n
+       "	if (!(count ((position _x) nearEntities [""CaManBase"",viewDistance]) == 0) || !(count (crew _x) == 0)) then {" \n
+       "		_x hideobject false;" \n
+       "        if (count ((position _x) nearEntities [""CaManBase"",50]) == 0) then {" \n
+       "            if (count (crew _x) == 0) then {" \n
+       "				_x enableSimulation false;" \n
+       "			}" \n
+       "			else {" \n
+       "				_x enableSimulation true;" \n
+       "			};" \n
+       "		}" \n
+       "		else {" \n
+       "			_x enableSimulation true;" \n
+       "		};" \n
+       "    }" \n
+       "	else{" \n
+       "        _x hideObject true;" \n
+       "	};" \n
+       "} forEach entities ""AllVehicles""; " \n
+       "" \n
+       "_manageCheck = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Repeater";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+  };
+};
+/*%FSM</COMPILE>*/
