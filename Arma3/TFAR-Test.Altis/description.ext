@@ -9,9 +9,17 @@ respawnDialog = 0;
 onLoadName = "TFAR Radio Test Mission"; 
 author="Atrax";
 OnLoadMission = "You got a radio? Use it...";
-class Header
-{
-gameType = ZGM;
-minPlayers = 1;
-maxPlayers = 75;
+class Header {
+	gameType = ZGM;
+	minPlayers = 1;
+	maxPlayers = 75;
+};
+
+class CfgFunctions {
+	class TFRT {
+		class radio {
+			class funkeklein {};
+			class teleport {};
+		};
+	};
 };
