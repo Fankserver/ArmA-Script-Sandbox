@@ -6,9 +6,9 @@ respawnDelay = 5;
 respawnVehicleDelay = 60;
 // 0 to disable the score table (it can still be opened manually by pressing 'P' key).
 respawnDialog = 0;
-onLoadName = "TFAR Radio Test Mission"; 
+onLoadName = "TFAR Radio Lesson"; 
 author="Atrax";
-OnLoadMission = "You got a radio? Use it...";
+OnLoadMission = "You got a radio? Learn to use it...";
 class Header {
 	gameType = ZGM;
 	minPlayers = 1;

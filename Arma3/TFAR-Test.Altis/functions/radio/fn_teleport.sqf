@@ -1,7 +1,7 @@
 //teleport Script
 //getting position by action
+private ["_caller","_tele","_dest","_text"];
 
-_tele = _this select 0;
 _caller = _this select 1;
 _dest = _this select 3 select 0;
 _text = _this select 3 select 1;
