@@ -634,7 +634,7 @@ class Mission
 			vehicle="MapBoard_altis_F";
 			skill=0.60000002;
 			text="Altis_base";
-			init="this addAction [""2km Entfernung"", ""TFRT_fnc_teleport"",[two,""Du wurdest in eine Entfernung von 2km zur Basis teleportiert.\n\nNutze den Flaggenmast zur Rueckkehr.""]];this addAction [""20km Entfernung"", ""TFRT_fnc_teleport"",[twenty,""Du wurdest in eine Entfernung von 18km zur Basis teleportiert.\n\nNutze den Flaggenmast zur Rueckkehr.""]];";
+			init="this addAction [""2km Entfernung"", TFRT_fnc_teleport,[two,""Du wurdest in eine Entfernung von 2km zur Basis teleportiert.\n\nNutze den Flaggenmast zur Rueckkehr.""]];this addAction [""20km Entfernung"", TFRT_fnc_teleport,[twenty,""Du wurdest in eine Entfernung von 18km zur Basis teleportiert.\n\nNutze den Flaggenmast zur Rueckkehr.""]];";
 		};
 		class Item19
 		{
@@ -658,7 +658,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="pole_20";
-			init="this addAction [""Basis"", ""TFRT_fnc_teleport"",[homebase,""Du wurdest zurück zur Basis teleportiert.""]];";
+			init="this addAction [""Basis"", TFRT_fnc_teleport,[homebase,""Du wurdest zurück zur Basis teleportiert.""]];";
 		};
 		class Item21
 		{
@@ -670,7 +670,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="pole_2";
-			init="this addAction [""Basis"", ""TFRT_fnc_teleport"",[homebase,""Du wurdest zurück zur Basis teleportiert.""]];";
+			init="this addAction [""Basis"", TFRT_fnc_teleport,[homebase,""Du wurdest zurück zur Basis teleportiert.""]];";
 		};
 		class Item22
 		{
@@ -742,7 +742,7 @@ class Mission
 			vehicle="Land_Laptop_device_F";
 			skill=0.60000002;
 			text="laptop1_1";
-			init="this attachTo [tisch1,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Ausruestung: Handfunkgeraet (Reichweite kurz)"",""TFRT_fnc_funkeklein""];this addAction [""Ausruestung: Funkgeraet (Reichweite gross)"",""funke_klein.sqf"",""tf_rt1523g""];";
+			init="this attachTo [tisch1,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Ausruestung: Handfunkgeraet (Reichweite kurz)"",TFRT_fnc_funkeklein];this addAction [""Ausruestung: Funkgeraet (Reichweite gross)"",TFRT_fnc_funkeklein,""tf_rt1523g""];";
 		};
 	};
 	class Markers
