@@ -690,8 +690,8 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.60000002;
-			text="laptop1";
-			init="this attachTo [tisch1,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Ausruestung: Handfunkgeraet (Reichweite kurz)"",""""];this addAction [""Ausruestung: Funkgeraet (Reichweite gross)"",""""];";
+			text="laptop2";
+			init="this attachTo [tisch2,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Ausruestung: Handfunkgeraet (Reichweite kurz)"",""""];this addAction [""Ausruestung: Funkgeraet (Reichweite gross)"",""""];";
 		};
 		class Item24
 		{
@@ -741,7 +741,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.60000002;
-			text="laptop1_1";
+			text="laptop1";
 			init="this attachTo [tisch1,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Ausruestung: Handfunkgeraet (Reichweite kurz)"",TFRT_fnc_funkeklein];this addAction [""Ausruestung: Funkgeraet (Reichweite gross)"",TFRT_fnc_funkeklein,""tf_rt1523g""];";
 		};
 	};
