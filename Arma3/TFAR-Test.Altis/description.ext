@@ -19,6 +19,7 @@ class CfgFunctions {
 	class TFRT {
 		class radio {
 			class funkeklein {};
+			class funkegross {};
 			class teleport {};
 		};
 	};

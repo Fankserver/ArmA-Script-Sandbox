@@ -6,7 +6,6 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"A3_Modules_F_Curator_Curator",
 		"a3_map_altis",
-		"task_force_radio_items",
 		"A3_Characters_F_Gamma",
 		"a3_characters_f_beta",
 		"A3_Soft_F_MRAP_02",
@@ -31,7 +30,6 @@ class Mission
 		"A3_Modules_F_Curator_Curator",
 		"A3_Data_F_Curator_Virtual",
 		"A3_Missions_F_Curator",
-		"task_force_radio_items",
 		"A3_Soft_F_MRAP_02",
 		"A3_Soft_F_Quadbike",
 		"A3_Structures_F_Mil_Helipads",
@@ -426,233 +424,152 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=29;
+		items=25;
 		class Item0
 		{
-			position[]={20609.287,51.42178,20117.41};
-			azimut=224.19701;
+			position[]={20562.748,47.636295,20092.896};
+			azimut=-135.416;
+			special="NONE";
 			id=16;
 			side="EMPTY";
-			vehicle="TF_EAST_Radio_Crate";
-			leader=1;
+			vehicle="O_MRAP_02_F";
+			lock="LOCKEDPLAYER";
 			skill=0.60000002;
-			text="crate1";
-			init="clearWeaponCargo this; clearMagazineCargo this;clearItemCargo this; this addItemCargo [""tf_FADAK"",10]; this addItemCargo [""tf_anprc154"",10];this addItemCargo [""tf_ANPRC_148"",10]; this addItemCargo [""tf_anprc148jem_1"",10]; this setPos [getPos this select 0, getPos this select 1, 0]";
 		};
 		class Item1
 		{
-			position[]={20606.939,51.444775,20114.896};
-			azimut=225.94099;
-			offsetY=0.55000001;
+			position[]={20567.598,47.540417,20088.449};
+			azimut=-135.416;
+			special="NONE";
 			id=17;
 			side="EMPTY";
-			vehicle="TF_EAST_Radio_Crate";
-			leader=1;
+			vehicle="O_MRAP_02_F";
+			lock="LOCKEDPLAYER";
 			skill=0.60000002;
-			init="clearWeaponCargo this; clearItemCargo this; clearMagazineCargo this; this addBackPackCargo [""tf_rt1523g"",10];this addBackPackCargo [""tf_anprc155"",10];this addBackPackCargo [""tf_mr3000"",10]; this setPos [getPos this select 0, getPos this select 1, 0];";
 		};
 		class Item2
 		{
-			position[]={20608.475,51.43161,20116.52};
-			azimut=224.19701;
+			position[]={20579.457,51.188297,20111.215};
+			azimut=51.562901;
+			special="NONE";
 			id=18;
 			side="EMPTY";
-			vehicle="TF_EAST_Radio_Crate";
-			leader=1;
+			vehicle="O_Quadbike_01_F";
+			lock="LOCKEDPLAYER";
 			skill=0.60000002;
-			text="crate1_1";
-			init="clearWeaponCargo this; clearMagazineCargo this;clearItemCargo this; this addItemCargo [""tf_FADAK"",10]; this addItemCargo [""tf_anprc154"",10];this addItemCargo [""tf_ANPRC_148"",10]; this addItemCargo [""tf_anprc148jem_1"",10]; this setPos [getPos this select 0, getPos this select 1, 0]";
 		};
 		class Item3
 		{
-			position[]={20598.91,51.309917,20121.461};
-			azimut=314.297;
-			offsetY=0.55000001;
+			position[]={20580.84,51.225834,20109.482};
+			azimut=51.562901;
+			special="NONE";
 			id=19;
 			side="EMPTY";
-			vehicle="TF_IND_Radio_Crate";
-			leader=1;
+			vehicle="O_Quadbike_01_F";
+			lock="LOCKEDPLAYER";
 			skill=0.60000002;
 		};
 		class Item4
 		{
-			position[]={20605.994,51.448994,20114.029};
-			azimut=225.94099;
-			offsetY=0.55000001;
+			position[]={20589.963,47.351772,20082.65};
+			special="NONE";
 			id=20;
 			side="EMPTY";
-			vehicle="TF_EAST_Radio_Crate";
-			leader=1;
+			vehicle="Land_HelipadCircle_F";
+			lock="LOCKEDPLAYER";
 			skill=0.60000002;
-			init="clearWeaponCargo this; clearItemCargo this; clearMagazineCargo this; this addBackPackCargo [""tf_rt1523g"",10];this addBackPackCargo [""tf_anprc155"",10];this addBackPackCargo [""tf_mr3000"",10]; this setPos [getPos this select 0, getPos this select 1, 0];";
 		};
 		class Item5
 		{
-			position[]={20599.994,51.330082,20120.49};
-			azimut=314.297;
-			offsetY=0.55000001;
+			position[]={20607.889,47.325974,20080.631};
+			special="NONE";
 			id=21;
 			side="EMPTY";
-			vehicle="TF_EAST_Radio_Crate";
-			leader=1;
+			vehicle="Land_HelipadCircle_F";
+			lock="UNLOCKED";
 			skill=0.60000002;
 		};
 		class Item6
 		{
-			position[]={20601.119,51.35054,20119.518};
-			azimut=314.297;
-			offsetY=0.55000001;
-			id=22;
-			side="EMPTY";
-			vehicle="TF_NATO_Radio_Crate";
-			leader=1;
-			skill=0.60000002;
-		};
-		class Item7
-		{
-			position[]={20562.748,47.636295,20092.896};
-			azimut=-135.4164;
-			special="NONE";
-			id=23;
-			side="EMPTY";
-			vehicle="O_MRAP_02_F";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item8
-		{
-			position[]={20567.598,47.540417,20088.449};
-			azimut=-135.4164;
-			special="NONE";
-			id=24;
-			side="EMPTY";
-			vehicle="O_MRAP_02_F";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item9
-		{
-			position[]={20579.457,51.188297,20111.215};
-			azimut=51.562916;
-			special="NONE";
-			id=25;
-			side="EMPTY";
-			vehicle="O_Quadbike_01_F";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item10
-		{
-			position[]={20580.84,51.225834,20109.482};
-			azimut=51.562916;
-			special="NONE";
-			id=26;
-			side="EMPTY";
-			vehicle="O_Quadbike_01_F";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item11
-		{
-			position[]={20589.963,47.351772,20082.65};
-			special="NONE";
-			id=27;
-			side="EMPTY";
-			vehicle="Land_HelipadCircle_F";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item12
-		{
-			position[]={20607.889,47.325974,20080.631};
-			special="NONE";
-			id=28;
-			side="EMPTY";
-			vehicle="Land_HelipadCircle_F";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item13
-		{
 			position[]={20589.965,47.35611,20083.195};
 			azimut=-175.97974;
 			special="NONE";
-			id=29;
+			id=22;
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
 		};
-		class Item14
+		class Item7
 		{
 			position[]={20597.242,47.212414,20071.607};
-			azimut=190.5871;
+			azimut=190.58701;
 			special="NONE";
-			id=30;
+			id=23;
 			side="EMPTY";
 			vehicle="O_Heli_Light_02_unarmed_F";
-			lock="UNLOCKED";
+			lock="LOCKEDPLAYER";
 			skill=0.60000002;
 		};
-		class Item15
+		class Item8
 		{
 			position[]={20608.154,47.316486,20079.961};
-			azimut=185.94676;
+			azimut=185.94701;
 			special="NONE";
-			id=31;
+			id=24;
 			side="EMPTY";
 			vehicle="B_Heli_Attack_01_F";
-			lock="UNLOCKED";
+			lock="LOCKEDPLAYER";
 			skill=0.60000002;
 		};
-		class Item16
+		class Item9
 		{
-			position[]={20615.861,51.422482,20123.566};
+			position[]={20596.51,51.328865,20115.615};
 			azimut=311.22601;
-			id=32;
+			id=25;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
 			skill=0.60000002;
 			text="homebase";
 		};
-		class Item17
+		class Item10
 		{
 			position[]={22546.182,16.971779,19927.99};
 			azimut=311.22601;
-			id=33;
+			id=26;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
 			skill=0.60000002;
 			text="two";
 		};
-		class Item18
+		class Item11
 		{
 			position[]={20590.65,51.269463,20115.037};
 			azimut=316.21701;
-			id=34;
+			id=27;
 			side="EMPTY";
 			vehicle="MapBoard_altis_F";
 			skill=0.60000002;
 			text="Altis_base";
 			init="this addAction [""2km Entfernung"", TFRT_fnc_teleport,[two,""Du wurdest in eine Entfernung von 2km zur Basis teleportiert.\n\nNutze den Flaggenmast zur Rueckkehr.""]];this addAction [""20km Entfernung"", TFRT_fnc_teleport,[twenty,""Du wurdest in eine Entfernung von 18km zur Basis teleportiert.\n\nNutze den Flaggenmast zur Rueckkehr.""]];";
 		};
-		class Item19
+		class Item12
 		{
 			position[]={3730.0398,18.87451,12978.382};
 			azimut=311.22601;
 			offsetY=39;
-			id=35;
+			id=28;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
 			skill=0.60000002;
 			text="twenty";
 		};
-		class Item20
+		class Item13
 		{
 			position[]={3723.5212,18.889782,12984.179};
 			azimut=316.21701;
 			offsetY=19;
-			id=36;
+			id=29;
 			side="EMPTY";
 			vehicle="FlagPole_F";
 			leader=1;
@@ -660,11 +577,11 @@ class Mission
 			text="pole_20";
 			init="this addAction [""Basis"", TFRT_fnc_teleport,[homebase,""Du wurdest zurück zur Basis teleportiert.""]];";
 		};
-		class Item21
+		class Item14
 		{
 			position[]={22534.922,16.833147,19925.393};
 			azimut=316.21701;
-			id=37;
+			id=30;
 			side="EMPTY";
 			vehicle="FlagPole_F";
 			leader=1;
@@ -672,77 +589,110 @@ class Mission
 			text="pole_2";
 			init="this addAction [""Basis"", TFRT_fnc_teleport,[homebase,""Du wurdest zurück zur Basis teleportiert.""]];";
 		};
-		class Item22
+		class Item15
 		{
 			position[]={20592.801,51.291523,20117.365};
 			azimut=45;
-			id=38;
+			id=31;
 			side="EMPTY";
 			vehicle="Land_WoodenTable_small_F";
 			skill=0.60000002;
 			text="tisch2";
 		};
-		class Item23
-		{
-			position[]={20591.967,51.284199,20118.32};
-			azimut=133.506;
-			id=39;
-			side="EMPTY";
-			vehicle="Land_Laptop_device_F";
-			skill=0.60000002;
-			text="laptop2";
-			init="this attachTo [tisch2,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Ausruestung: Handfunkgeraet (Reichweite kurz)"",""""];this addAction [""Ausruestung: Funkgeraet (Reichweite gross)"",""""];";
-		};
-		class Item24
+		class Item16
 		{
 			position[]={20595.059,51.286442,20119.582};
 			azimut=45;
-			id=40;
+			id=32;
 			side="EMPTY";
 			vehicle="Land_WoodenTable_small_F";
 			skill=0.60000002;
 			text="tisch4";
 		};
-		class Item25
+		class Item17
 		{
 			position[]={20593.912,51.288429,20118.5};
 			azimut=45;
-			id=41;
+			id=33;
 			side="EMPTY";
 			vehicle="Land_WoodenTable_small_F";
 			skill=0.60000002;
 			text="tisch3";
 		};
-		class Item26
+		class Item18
 		{
 			position[]={20596.223,51.297501,20120.707};
 			azimut=45;
-			id=42;
+			id=34;
 			side="EMPTY";
 			vehicle="Land_WoodenTable_small_F";
 			skill=0.60000002;
 			text="tisch5";
 		};
-		class Item27
+		class Item19
 		{
 			position[]={20591.754,51.281368,20116.238};
 			azimut=45;
-			id=43;
+			id=35;
 			side="EMPTY";
 			vehicle="Land_WoodenTable_small_F";
 			skill=0.60000002;
 			text="tisch1";
 		};
-		class Item28
+		class Item20
 		{
-			position[]={20590.842,51.274239,20117.273};
+			position[]={20591.15,51.277367,20117.465};
 			azimut=133.506;
-			id=44;
+			id=36;
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.60000002;
 			text="laptop1";
-			init="this attachTo [tisch1,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Ausruestung: Handfunkgeraet (Reichweite kurz)"",TFRT_fnc_funkeklein];this addAction [""Ausruestung: Funkgeraet (Reichweite gross)"",TFRT_fnc_funkeklein,""tf_rt1523g""];";
+			init="this attachTo [tisch1,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Handfunkgeraet (Reichweite kurz): FADAK"",TFRT_fnc_funkeklein,""tf_FADAK""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR154"",TFRT_fnc_funkeklein,""tf_anprc154""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR148"",TFRT_fnc_funkeklein,""tf_anprc148jem_1""];this addAction [""Funkgeraet (Reichweite gross): RT1523g"",TFRT_fnc_funkegross,""tf_rt1523g""];this addAction [""Funkgeraet (Reichweite gross): ANPRC155"",TFRT_fnc_funkegross,""tf_anprc155""];this addAction [""Funkgeraet (Reichweite gross): MR3000"",TFRT_fnc_funkegross,""tf_mr3000""];";
+		};
+		class Item21
+		{
+			position[]={20592.197,51.282532,20118.748};
+			azimut=133.506;
+			id=37;
+			side="EMPTY";
+			vehicle="Land_Laptop_device_F";
+			skill=0.60000002;
+			text="laptop2";
+			init="this attachTo [tisch2,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Handfunkgeraet (Reichweite kurz): FADAK"",TFRT_fnc_funkeklein,""tf_FADAK""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR154"",TFRT_fnc_funkeklein,""tf_anprc154""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR148"",TFRT_fnc_funkeklein,""tf_anprc148jem_1""];this addAction [""Funkgeraet (Reichweite gross): RT1523g"",TFRT_fnc_funkegross,""tf_rt1523g""];this addAction [""Funkgeraet (Reichweite gross): ANPRC155"",TFRT_fnc_funkegross,""tf_anprc155""];this addAction [""Funkgeraet (Reichweite gross): MR3000"",TFRT_fnc_funkegross,""tf_mr3000""];";
+		};
+		class Item22
+		{
+			position[]={20593.285,51.280693,20119.637};
+			azimut=133.506;
+			id=38;
+			side="EMPTY";
+			vehicle="Land_Laptop_device_F";
+			skill=0.60000002;
+			text="laptop3";
+			init="this attachTo [tisch3,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Handfunkgeraet (Reichweite kurz): FADAK"",TFRT_fnc_funkeklein,""tf_FADAK""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR154"",TFRT_fnc_funkeklein,""tf_anprc154""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR148"",TFRT_fnc_funkeklein,""tf_anprc148jem_1""];this addAction [""Funkgeraet (Reichweite gross): RT1523g"",TFRT_fnc_funkegross,""tf_rt1523g""];this addAction [""Funkgeraet (Reichweite gross): ANPRC155"",TFRT_fnc_funkegross,""tf_anprc155""];this addAction [""Funkgeraet (Reichweite gross): MR3000"",TFRT_fnc_funkegross,""tf_mr3000""];";
+		};
+		class Item23
+		{
+			position[]={20594.447,51.278816,20120.57};
+			azimut=133.506;
+			id=39;
+			side="EMPTY";
+			vehicle="Land_Laptop_device_F";
+			skill=0.60000002;
+			text="laptop4";
+			init="this attachTo [tisch4,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Handfunkgeraet (Reichweite kurz): FADAK"",TFRT_fnc_funkeklein,""tf_FADAK""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR154"",TFRT_fnc_funkeklein,""tf_anprc154""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR148"",TFRT_fnc_funkeklein,""tf_anprc148jem_1""];this addAction [""Funkgeraet (Reichweite gross): RT1523g"",TFRT_fnc_funkegross,""tf_rt1523g""];this addAction [""Funkgeraet (Reichweite gross): ANPRC155"",TFRT_fnc_funkegross,""tf_anprc155""];this addAction [""Funkgeraet (Reichweite gross): MR3000"",TFRT_fnc_funkegross,""tf_mr3000""];";
+		};
+		class Item24
+		{
+			position[]={20595.5,51.282867,20121.467};
+			azimut=133.506;
+			id=40;
+			side="EMPTY";
+			vehicle="Land_Laptop_device_F";
+			skill=0.60000002;
+			text="laptop5";
+			init="this attachTo [tisch5,[0.4,0,0.57]];this setVectorDirAndUp [[1,0,0],[0,0,1]];this addAction [""Handfunkgeraet (Reichweite kurz): FADAK"",TFRT_fnc_funkeklein,""tf_FADAK""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR154"",TFRT_fnc_funkeklein,""tf_anprc154""];this addAction [""Handfunkgeraet (Reichweite kurz): AN/PCR148"",TFRT_fnc_funkeklein,""tf_anprc148jem_1""];this addAction [""Funkgeraet (Reichweite gross): RT1523g"",TFRT_fnc_funkegross,""tf_rt1523g""];this addAction [""Funkgeraet (Reichweite gross): ANPRC155"",TFRT_fnc_funkegross,""tf_anprc155""];this addAction [""Funkgeraet (Reichweite gross): MR3000"",TFRT_fnc_funkegross,""tf_mr3000""];";
 		};
 	};
 	class Markers
